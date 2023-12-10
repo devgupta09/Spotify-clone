@@ -1,0 +1,94 @@
+.playbar-container {
+    background-color: black;
+    display: flex;
+    padding: 20px 10px;
+    height: 12%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .song-detail {
+        flex: 2.5;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        img {
+            flex: 1;
+            width: 4rem;
+            height: 8vh;
+            border-radius: 2px;
+        }
+
+        .playlist-item {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+
+            .song-name {
+                font-weight: 600;
+                color: white;
+            }
+
+            .song-artist {
+                font-size: 0.8rem;
+                font-weight: 400;
+                color: #d6d3d3;
+            }
+        }
+
+        .like-and-picture {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+    }
+
+    .playbar {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // gap: 10px;
+
+        .track-funtions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .tracker {
+            color: #d6d3d3;
+            width: 70%;
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    }
+
+    .other-funtions {
+        flex: 2.5;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        font-size: 0.9rem;
+        align-items: center;
+        padding: 10px;
+
+        .volume-slider {
+            color: #d6d3d3;
+            width: 30%;
+        }
+    }
+}
