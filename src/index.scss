@@ -1,0 +1,41 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 1rem;
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-scrollbar {
+  margin-right: 4px;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+}
